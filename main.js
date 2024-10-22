@@ -7,3 +7,11 @@
 // Al secondo click la lampadina si spegne e nel bottone compare la scritta "Accendi"
 // e così via...
 // Per fare questo bonus potremmo aver bisogno di del metodo string.includes()la consegna academica
+
+//prima chiamiamo il bottone: 
+const onButton = document.getElementById('onButton');
+
+//test click onButton
+onButton.addEventListener('click', function () {
+    console.log('Hai cliccato')
+});
