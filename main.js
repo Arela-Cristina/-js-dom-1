@@ -15,12 +15,17 @@ button.addEventListener('click', function () {
     if (bulb.src.includes('img/white_lamp.png')){
         //se essiste ed e spenta accenderla, al click/ Proprieta src. ancora per manipoalre il atributo
         bulb.src = 'img/yellow_lamp.png';
+        bulb.alt = 'lampadina Accesa';
         //proprieta textContent. per modificare il testo del bottone
         button.textContent = 'Spegni'
     } else {
         //se e accesa la spegniamo
         bulb.src = 'img/white_lamp.png';
+        bulb.alt = 'lampadina Spenta';
         //proprieta textContent. per modificare il testo del bottone
         button.textContent = 'Accendi'
     }
 });
+
+//consigli
+//proprieta .alt per manipolare anche il atributo alt. della immagine non dimenticare.
